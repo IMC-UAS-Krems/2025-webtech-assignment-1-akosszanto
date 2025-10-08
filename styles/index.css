@@ -1,0 +1,29 @@
+html{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}   
+
+a.active {
+  font-weight: bold;
+}
