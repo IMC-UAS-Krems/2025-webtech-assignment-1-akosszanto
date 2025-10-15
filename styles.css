@@ -1,9 +1,59 @@
+/* Universal styles */
+html {
+  font-family: Arial, sans-serif;
+}
+
+nav{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(62, 62, 62);
+  transition: transform 0.2s;
+}
+
+nav > a:hover {
+  transform: scale(1.15);
+}
+
+a.active {
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 12px
+}
+
+.debug-border {
+  border: 1px solid red;
+}
+
+/* Index styles */
 .index-body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* CV styles */
+.cv-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 24px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
 .cv-img-div{
@@ -30,6 +80,11 @@
     margin-bottom: 8px;
 }
 
+.cv-reference-links {
+    color: blue;
+}
+
+/* About styles */
 .about-row {
     display: flex;
     align-items: center;
@@ -53,46 +108,23 @@
     border-radius: 8px;
 }
 
-
-
-html {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Gallery styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/*/
+    gap: 20px;
+    padding: 20px 0;
 }
 
-nav{
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  padding: 10px;
-  color: rgb(62, 62, 62);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a.active {
-  font-weight: bold;
-  color: black;
-}
-
-.container {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 12px
-}
-
-.debug-border {
-  border: 1px solid red;
-}
-
-.cv-reference-links {
-    color: blue;
+.gallery-img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
