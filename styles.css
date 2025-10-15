@@ -1,0 +1,98 @@
+.index-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-img-div{
+    width: auto;
+    display: inline-block;
+}
+
+.cv-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cv-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.cv-li {
+    margin-bottom: 8px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.about-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.left-content, .right-content {
+    flex: 1;
+}
+
+.about-img {
+    width: 450px;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(62, 62, 62);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.active {
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 12px
+}
+
+.debug-border {
+  border: 1px solid red;
+}
+
+.cv-reference-links {
+    color: blue;
+}
