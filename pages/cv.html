@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 
     <link rel="stylesheet" href="../styles.css" />
-
     <title>CV</title>
   </head>
   <body>
@@ -19,76 +17,120 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <main class="container ">
-      <h2 style="text-align: center">Curriculum Vitae</h2>
-
-      <div class="cv-row ">
-        <div class="img-div ">
-          <img
-            src="../images/cvtemplate.jpg"
-            alt="CV picture"
-            class="cv-pic"
-          />
-        </div>
-
-        <div class="">
-          <h2 style="font-size: 45px;">Ákos Szántó</h2>
-          <h3>Hungary, Sopron</h3>
-          <h3>Student</h3>
-        </div> 
-      </div>
-
-      <div class="cv-row ">
-          <div class="education-div debug-border">
-            <h2>Education</h2>
-            <ul>
-              <li>2012 - 2020: Fenyőtéri German National Elementary School, Sopron</li>
-              <li>2020 - 2025: Technical School for Iron and Electrical Engineering, Sopron</li>
-              <li>2025 - 20xx: IMC University of Applied Sciences, Krems</li>
-            </ul>
-          </div>
-
-        <div class="debug-border">
-          <h2>Connection</h2>
-          <ul class="cv-contact-list" type="none">
-            <li>
-              <img src="../images/phone.png" alt="Phone" class="cv-contact-icon" style="margin-right: 5px;"/>
-              +36 30 123 4567
-            </li>
-            <li>
-              <img src="../images/mail.png" alt="Email" class="cv-contact-icon" style="margin-right: 5px;"/>
-              szantoakos987@gmail.com
-            </li>
-            <li>
-              <img src="../images/github.png" alt="GitHub" class="cv-contact-icon" style="margin-right: 5px;"/>
-              akosszanto
-            </li>
-          </ul>
+    <main class="cv-page">
+      <div class="cv-header">
+        <img
+          src="../images/cvtemplate.jpg"
+          alt="Ákos Szántó"
+          class="cv-photo"
+        />
+        <div class="cv-title-section">
+          <h1>Ákos Szántó</h1>
+          <h2>STUDENT</h2>
+          <h2>Sopron, Hungary</h2>
         </div>
       </div>
 
-      <div class="cv-row ">
-          <div class="" style="height: 180px;">
-            <h2>Skills</h2>
-            <ul>
-              <li>HTML, CSS, JavaScript</li>
-              <li>Frameworks (React, Express, Tailwind)</li>
-              <li>Python, C#</li>
-              <li>MySql, MongoDb</li>
-            </ul>
+      <div class="cv-content">
+        
+        <div class="two-column">
+          <div class="cv-section">
+            <h3 class="section-title">CONTACT</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <img
+                  src="../images/phone.png"
+                  alt="Phone"
+                  class="contact-icon"
+                />
+                <span>+36 30 123 4567</span>
+              </div>
+              <div class="contact-item">
+                <img
+                  src="../images/mail.png"
+                  alt="Email"
+                  class="contact-icon"
+                />
+                <span>szantoakos987@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <img
+                  src="../images/github.png"
+                  alt="GitHub"
+                  class="contact-icon"
+                />
+                <span>github.com/akosszanto</span>
+              </div>
+            </div>
           </div>
 
-          <div class="" style="height: 180px;">
-            <h2>Reference works</h2>
-            <ul>
-              <li><a href="https://docs.google.com/presentation/d/1mfYiUgvo8fPDrvIzAnWl9Up1A3fJ1-WM/edit?usp=drive_link&ouid=112132465265076896469&rtpof=true&sd=true" target="_blank" class="cv-reference-links">SpinBazar - Casino project for final exam in high school</a></li>
-              <li><a href="https://github.com/akosszanto/imgreader" target="_blank" class="cv-reference-links">OCR - Smart data extraction</a></li>
+          <div class="cv-section">
+            <h3 class="section-title">SKILLS</h3>
+            <div class="skills-list">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">Tailwind</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
           </div>
+        </div>
+
+        <div class="cv-section">
+          <h3 class="section-title">EDUCATION</h3>
+          <div class="education-item">
+            <div class="year">2012 - 2020</div>
+            <div class="schools-name">
+              Fenyőtéri German National Elementary School, Sopron
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="year">2020 - 2025</div>
+            <div class="schools-name">
+              Technical School for Iron and Electrical Engineering, Sopron
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="year">2025 - Present</div>
+            <div class="schools-name">
+              IMC University of Applied Sciences, Krems
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h3 class="section-title">REFERENCE WORKS</h3>
+          <div class="reference-item">
+            <a
+              href="https://docs.google.com/presentation/d/1mfYiUgvo8fPDrvIzAnWl9Up1A3fJ1-WM/edit?usp=drive_link&ouid=112132465265076896469&rtpof=true&sd=true"
+              target="_blank"
+            >
+              SpinBazar - Casino Project
+            </a>
+            <div class="reference-desc">
+              Full-stack casino application developed for final exam
+            </div>
+          </div>
+          <div class="reference-item">
+            <a href="https://github.com/akosszanto/imgreader" target="_blank">
+              OCR - Smart Data Extraction
+            </a>
+            <div class="reference-desc">
+              Intelligent text recognition and data extraction tool
+            </div>
+          </div>
+        </div>
+
       </div>
-    </main> 
+    </main>
+
     <footer>
-        <p style="text-align: center; font-size: 12px; padding: 10px 0;">
-          &copy; 2025 Ákos Szántó
-        </p>
+      <p>&copy; 2025 Ákos Szántó. All rights reserved.</p>
+    </footer>
   </body>
 </html>

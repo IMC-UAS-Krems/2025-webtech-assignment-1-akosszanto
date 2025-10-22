@@ -1,17 +1,23 @@
 /* Universal styles */
 html {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #fef9e7, #fff7ed, #fefce8);
+  background-image: linear-gradient(to bottom, #ffff, #d3d2c9);
 }
 
 nav {
   justify-content: center;
   display: flex;
   margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
 }
 
 a {
@@ -51,55 +57,137 @@ a.active {
 }
 
 /* CV styles */
-.cv-container {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 24px;
-  background: #fff;
-  border: 2px solid #e0e0e0;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-}
 
-.cv-img-div {
-  width: auto;
-  display: inline-block;
-}
-
-.cv-row {
+.cv-header {
+  color: #36332b;
+  padding: 50px;
   display: flex;
   align-items: center;
-  flex-direction: row;
   gap: 40px;
-  margin: 20px;
-  padding: 20px;
 }
 
-.cv-pic {
+.cv-photo {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  margin-right: 40px;
 }
 
-.cv-li {
+.cv-title-section h1 {
+  font-size: 42px;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 
-.cv-contact-list {
-  padding-left: 20px;
-  list-style: none;
-  margin: 0;
+.cv-title-section h2 {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.95;
+  margin-bottom: 4px;
 }
 
-.cv-contact-icon {
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  opacity: 0.8;
+.cv-content {
+  padding: 50px 60px;
 }
 
-.cv-reference-links {
-  color: blue;
+.cv-section {
+  margin-bottom: 40px;
+}
+
+.cv-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #36332b;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #36332b;
+  letter-spacing: 1px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1:2 ratio  https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+  gap: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #444;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  opacity: 0.7;
+}
+
+.education-item,
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.year {
+  font-weight: 700;
+  color: #36332b;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.schools-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background-color: #c9c1a0;
+  color: rgb(29, 29, 29);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.reference-item {
+  background: #ffffff34;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.reference-item a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.reference-item a:hover {
+  color: #4b5fa2;
+  text-decoration: underline;
 }
 
 /* About styles */
@@ -111,6 +199,10 @@ a.active {
   margin-bottom: 40px;
 }
 
+.about-title{
+  letter-spacing: 1px;
+}
+
 .about-row.reverse {
   flex-direction: row-reverse;
 }
@@ -118,6 +210,7 @@ a.active {
 .left-content,
 .right-content {
   flex: 1;
+  text-align: justify;
 }
 
 .about-img {
@@ -179,7 +272,8 @@ a.active {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 18px;
   border: 1px solid #d0d7e2;
   border-radius: 8px;
