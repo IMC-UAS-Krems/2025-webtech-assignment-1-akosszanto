@@ -67,23 +67,25 @@ a.active {
 }
 
 .cv-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 210px;
+  height: 250px;
   margin-right: 40px;
+  margin-left: 10px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .cv-title-section h1 {
-  font-size: 42px;
+  font-size: 64px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
 }
 
 .cv-title-section h2 {
   font-size: 20px;
-  font-weight: 400;
-  opacity: 0.95;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
 }
 
 .cv-content {
@@ -240,7 +242,7 @@ a.active {
 
 .gallery-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   transition: transform 0.6s;
 }
@@ -253,7 +255,7 @@ a.active {
 .contact-container {
   max-width: 900px;
   margin: 32px auto;
-  padding: 12px;
+  padding: 20px;
 }
 .contact-form {
   max-width: 400px;
@@ -265,7 +267,7 @@ a.active {
 }
 .contact-form label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: bold;
   color: #2d3a4a;
 }
@@ -274,12 +276,11 @@ a.active {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
   margin-bottom: 18px;
   border: 1px solid #d0d7e2;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #f7fafc;
-  font-size: 1rem;
-  resize: none;
 }
 .contact-form button {
   width: 100%;
