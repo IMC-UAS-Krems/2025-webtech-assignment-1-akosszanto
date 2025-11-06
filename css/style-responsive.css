@@ -3,135 +3,308 @@
   html {
     font-size: 28px;
   }
-  
+
   .container {
     margin-left: 50px;
     margin-right: 50px;
   }
-  
+
   .cv-header {
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 20px;
     gap: 30px;
   }
-  
+
   .cv-photo {
+    width: 350px;
+    height: 420px;
     margin-right: 0;
     margin-left: 0;
   }
-  
+
+  .cv-title-section {
+    text-align: center;
+  }
+
   .cv-title-section h1 {
     font-size: 96px;
   }
-  
-  .cv-content {
-    padding: 40px 60px;
+
+  .cv-title-section h2 {
+    font-size: 36px;
   }
-  
+
+  .cv-content {
+    padding: 60px 40px;
+  }
+
   .two-column {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .about-row,
   .about-row.reverse {
     flex-direction: column;
   }
-  
+
   .about-img {
     width: 100%;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .contact-item {
+    font-size: 28px;
+    gap: 20px;
   }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 24px;
+    font-size: 22px;
   }
-  
+
+  footer {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+
   .container {
     margin-left: 20px;
     margin-right: 20px;
     padding: 16px;
   }
-  
+
   nav {
-    flex-wrap: wrap; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-wrap */
+    flex-wrap: wrap;
   }
-  
+
   nav > a {
-    font-size: 24px;
+    font-size: 22px;
     padding: 8px;
   }
-  
+
   .cv-header {
-    padding: 20px;
+    padding: 30px 15px;
+    gap: 20px;
   }
-  
+
   .cv-photo {
-    width: 100%;
-    height: auto;
+    width: 280px;
+    height: 340px;
   }
-  
+
   .cv-title-section h1 {
     font-size: 64px;
+    letter-spacing: 2px;
   }
-  
+
   .cv-title-section h2 {
-    font-size: 32px;
+    font-size: 28px;
+    letter-spacing: 2px;
   }
-  
+
   .cv-content {
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
-  
+
   .cv-section {
     margin-bottom: 50px;
   }
-  
+
   .section-title {
     font-size: 36px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #36332b;
   }
-  
+
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+  }
+
+  .contact-item {
+    font-size: 24px;
+    gap: 16px;
+  }
+
+  .year {
+    font-size: 24px;
+  }
+
+  .schools-name {
+    font-size: 28px;
+  }
+
+  .skill-tag {
+    padding: 12px 24px;
+    font-size: 24px;
+  }
+
+  .reference-item {
+    padding: 30px;
+  }
+
+  .reference-item a {
+    font-size: 28px;
+  }
+
   .gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
-  
+
   .contact-form {
     padding: 32px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 24px;
   }
 }
 
 /* Mobile S, M, L */
 @media (max-width: 480px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
-  
+
   .container {
     margin-left: 10px;
     margin-right: 10px;
+    padding: 12px;
   }
-  
+
+  nav > a {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .index-title {
+    font-size: 58px;
+    letter-spacing: 3px;
+  }
+
+  .cv-header {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .cv-photo {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
   .cv-title-section h1 {
     font-size: 48px;
+    letter-spacing: 1px;
   }
-  
+
+  .cv-title-section h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .cv-content {
+    padding: 30px 15px;
+  }
+
+  .cv-section {
+    margin-bottom: 40px;
+  }
+
   .section-title {
-    font-size: 32px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #36332b;
   }
-  
-  .skills-list {
+
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .contact-item {
+    font-size: 20px;
     gap: 12px;
   }
-  
-  .skill-tag {
-    padding: 12px 24px;
+
+  .year {
+    font-size: 20px;
+  }
+
+  .schools-name {
     font-size: 24px;
   }
-  
+
+  .skills-list {
+    gap: 10px;
+  }
+
+  .skill-tag {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  .reference-item {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .reference-item a {
+    font-size: 24px;
+  }
+
+  .about-img {
+    height: auto;
+  }
+
+  .left-content,
+  .right-content {
+    font-size: 20px;
+  }
+
   .gallery-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    padding: 18px;
+    font-size: 20px;
+  }
+
+  .contact-form .info {
+    font-size: 18px;
+  }
+
+  .nba-gallery-header h2 {
+    font-size: 48px;
+  }
+
+  .nba-gallery-header .nba-logo {
+    width: 80px;
   }
 }
