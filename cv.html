@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,27 +10,29 @@
     <title>CV</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About me</a>
-      <a href="cv.html" class="active">CV</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
     <main class="cv-page">
-      <div class="cv-header">
+      <header class="cv-header">
         <img src="../images/cvimg.jpg" alt="Ákos Szántó" class="cv-photo" />
         <div class="cv-title-section">
           <h1>ÁKOS SZÁNTÓ</h1>
           <h2>STUDENT</h2>
           <h2>Sopron, Hungary</h2>
         </div>
-      </div>
+      </header>
 
       <div class="cv-content">
         <div class="two-column">
-          <div class="cv-section">
+          <section class="cv-section">
             <h3 class="section-title">CONTACT</h3>
             <div class="contact-info">
               <div class="contact-item">
@@ -62,9 +64,9 @@
                 <span>github.com/akosszanto</span>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div class="cv-section">
+          <section class="cv-section">
             <h3 class="section-title">SKILLS</h3>
             <div class="skills-list">
               <span class="skill-tag">HTML</span>
@@ -78,34 +80,34 @@
               <span class="skill-tag">MySQL</span>
               <span class="skill-tag">MongoDB</span>
             </div>
-          </div>
+          </section>
         </div>
 
-        <div class="cv-section">
+        <section class="cv-section">
           <h3 class="section-title">EDUCATION</h3>
-          <div class="education-item">
+          <article class="education-item">
             <div class="year">2012 - 2020</div>
             <div class="schools-name">
               Fenyőtéri German National Elementary School, Sopron
             </div>
-          </div>
-          <div class="education-item">
+          </article>
+          <article class="education-item">
             <div class="year">2020 - 2025</div>
             <div class="schools-name">
               Technical School for Iron and Electrical Engineering, Sopron
             </div>
-          </div>
-          <div class="education-item">
+          </article>
+          <article class="education-item">
             <div class="year">2025 - Present</div>
             <div class="schools-name">
               IMC University of Applied Sciences, Krems
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
 
-        <div class="cv-section">
+        <section class="cv-section">
           <h3 class="section-title">REFERENCE WORKS</h3>
-          <div class="reference-item">
+          <article class="reference-item">
             <a
               href="https://docs.google.com/presentation/d/1mfYiUgvo8fPDrvIzAnWl9Up1A3fJ1-WM/edit?usp=drive_link&ouid=112132465265076896469&rtpof=true&sd=true"
               target="_blank"
@@ -115,16 +117,16 @@
             <div class="reference-desc">
               Full-stack casino application developed for final exam
             </div>
-          </div>
-          <div class="reference-item">
+          </article>
+          <article class="reference-item">
             <a href="https://github.com/akosszanto/imgreader" target="_blank">
               OCR - Smart Data Extraction
             </a>
             <div class="reference-desc">
               Intelligent text recognition and data extraction tool
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </div>
     </main>
 

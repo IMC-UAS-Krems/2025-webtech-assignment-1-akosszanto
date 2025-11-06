@@ -9,6 +9,14 @@
     margin-right: 50px;
   }
 
+  .right-content > .about-title {
+    margin-left: 0;
+  }
+
+  .right-content > .about-img {
+    margin-left: 0;
+  }
+
   .cv-header {
     flex-direction: column;
     padding: 40px 20px;
@@ -88,6 +96,14 @@
   nav > a {
     font-size: 22px;
     padding: 8px;
+  }
+
+  .right-content > .about-title {
+    margin-left: 0;
+  }
+
+  .right-content > .about-img {
+    margin-left: 0;
   }
 
   .cv-header {
@@ -192,6 +208,14 @@
   .index-title {
     font-size: 58px;
     letter-spacing: 3px;
+  }
+
+  .right-content > .about-title {
+    margin-left: 0;
+  }
+
+  .right-content > .about-img {
+    margin-left: 0;
   }
 
   .cv-header {
